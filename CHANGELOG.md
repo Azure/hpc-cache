@@ -26,8 +26,6 @@ The update rolled out the week of September 27, 2021 include these changes:
 
 * [Azure Private Endpoint](https://docs.microsoft.com/azure/private-link/private-endpoint-overview) support for NFS, blob, and NFS-mounted blob storage targets
 
-* Support for [Qumolo on Azure as a Service](https://qumulo.com/azure/)
-
 ## OS update - 2021-09-01
 
 The OS update released on September 1 includes security updates and various performance improvements.
