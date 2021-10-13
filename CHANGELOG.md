@@ -6,9 +6,29 @@ Cache administrators are notified of operating system updates with a banner in t
 
 Read about the OS update process in [Manage your cache - Upgrade cache software](https://docs.microsoft.com/azure/hpc-cache/hpc-cache-manage?tabs=azure-portal#upgrade-cache-software).
 
+## OS update - 2021-10-13
+
+The OS update released on October 13 includes these improvements and bug fixes:
+
+* Fixed a timing issue that could prevent a newly created HPC Cache from serving data.
+
+* Simplified an internal configuration database to prevent jobs from becoming stuck and requiring manual intervention.
+
+* Fixed a defect that could leave DNS poller alerts active after the related storage target had been removed. This issue could cause the Azure HPC Cache to go to Degraded state.
+
+* A probe was added to monitor the health of NFS TCP connections to NAS systems.
+
+  * If NULL RPCs cannot succeed on a connection for 20 minutes, then the connection will no longer be used for new NFS operations.
+
+  * If there are pending NFS operations on that unhealthy connection, then reconnect attempts will be made after a delay. After each unsuccessful reconnect attempt, the delay will increase, up to a maximum of one hour. The delay is designed to allow firewall state to time out.
+
+  This change applies only to NAS-backed storage targets that are created after applying this software update. Other storage targets are unaffected.
+
+  Connectivity conditions might take up to three hours to clear. Defective or misconfigured firewalls can extend this time indefinitely. The TCP connection parameters in the condition will aid in firewall troubleshooting.
+
 ## Features update - 2021-09-30
 
-The update rolled out the week of September 27, 2021 include these changes:
+The update rolled out the week of September 27, 2021 included these changes:
 
 * Updated mount instructions
 
@@ -28,7 +48,7 @@ The update rolled out the week of September 27, 2021 include these changes:
 
 ## OS update - 2021-09-01
 
-The OS update released on September 1 includes security updates and various performance improvements.
+The OS update released on September 1 included security updates and various performance improvements.
 
 Additional information:
 
