@@ -16,7 +16,7 @@ The OS update released on October 13 includes these improvements and bug fixes:
 
 * Fixed a defect that could leave DNS poller alerts active after the related storage target had been removed. This issue could cause the Azure HPC Cache to go to Degraded state.
 
-* A probe was added to monitor the health of NFS TCP connections to NAS storage systems.
+* A probe was added to monitor the health of NFS TCP connections to NAS systems.
 
   * If NULL RPCs cannot succeed on a connection for 20 minutes, then the connection will no longer be used for new NFS operations.
 
