@@ -6,6 +6,44 @@ Cache administrators are notified of operating system updates with a banner in t
 
 Read about the OS update process in [Manage your cache - Upgrade cache software](https://docs.microsoft.com/azure/hpc-cache/hpc-cache-manage?tabs=azure-portal#upgrade-cache-software).
 
+## Features update - 2022-01-25
+
+The update rolled out during the last week of January, 2022, included these new features:
+
+* Cache invalidation by storage target
+
+  The new invalidate feature lets you tell the cache to discard all cached files from a particular storage target. The next time a client requests that information, it will be read from the back-end storage system.
+
+   Read [Invalidate cache contents](https://docs.microsoft.com/azure/hpc-cache/manage-storage-targets?tabs=azure-portal#invalidate-cache-contents-for-a-storage-target) for details, including a caution about using this feature with write caching.
+
+* Cache priming (public preview)
+
+  The new priming feature lets you load specific content into the cache before it's requested. This means that you can populate the cache with your expected working files ahead of time, and start your compute task with lower latency. <!--reduce read latency from the beginning of your compute task? -->
+
+  Learn more at [Pre-load files in Azure HPC Cache (preview)](https://docs.microsoft.com/azure/hpc-cache/prime-cache).
+
+* Additional Azure regions
+
+  Azure HPC Cache is now available in Central India and Sweden Central.
+
+* Availability zone support
+
+  For caches created in Azure regions that support Availability zones, you can choose which zone will host cache resources.
+
+* Refresh DNS available for more storage types
+
+  To better support storage targets that use Azure storage private endpoints, an IP refresh control now appears on the [storage target management](https://docs.microsoft.com/azure/hpc-cache/manage-storage-targets?tabs=azure-portal#update-ip-address) page for Azure Blob and NFS-mounted blob storage targets as well as for NFS storage targets that use DNS. A DNS refresh is needed if you change settings on a private endpoint used for a storage target.
+
+  Additional information about working with private endpoints also was added to the [storage prerequisites documentation](https://docs.microsoft.com/azure/hpc-cache/hpc-cache-prerequisites#work-with-private-endpoints).
+
+* Bug fixes:
+
+  * Addressed cache throughput spikes
+  * Fixed a bad request associated with blob storage DNS refresh
+  * Corrected a repeated error message and an incorrect error message seen when adding an NFS-mounted blob storage target
+  * Aligned the cache creation timeout with the overall timeout
+  * Fixed an issue that caused a restarted cache to come up in degraded state
+
 ## OS update - 2021-10-13
 
 The OS update released on October 13 includes these improvements and bug fixes:
