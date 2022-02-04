@@ -18,7 +18,7 @@ The update rolled out during the last week of January, 2022, included these new 
 
 * Cache priming (public preview)
 
-  The new priming feature lets you load specific content into the cache before it's requested. This means that you can populate the cache with your expected working files ahead of time, and start your compute task with lower latency. <!--reduce read latency from the beginning of your compute task? -->
+  The new priming feature lets you load specific content into the cache before it's requested. This means that you can populate the cache with your expected working files ahead of time, and start your compute task with faster responses. <!--reduce read latency from the beginning of your compute task? -->
 
   Learn more at [Pre-load files in Azure HPC Cache (preview)](https://docs.microsoft.com/azure/hpc-cache/prime-cache).
 
