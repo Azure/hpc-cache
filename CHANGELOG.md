@@ -6,6 +6,10 @@ Cache administrators are notified of operating system updates with a banner in t
 
 Read about the OS update process in [Manage your cache - Upgrade cache software](https://docs.microsoft.com/azure/hpc-cache/hpc-cache-manage?tabs=azure-portal#upgrade-cache-software).
 
+## OS update - 2022-02-07
+
+OS software rolled out in the second week of February, 2022, includes internal bug fixes and software support for features that are still in development.
+
 ## Features update - 2022-01-25
 
 The update rolled out during the last week of January, 2022, included these new features:
@@ -43,6 +47,10 @@ The update rolled out during the last week of January, 2022, included these new 
   * Corrected a repeated error message and an incorrect error message seen when adding an NFS-mounted blob storage target
   * Aligned the cache creation timeout with the overall timeout
   * Fixed an issue that caused a restarted cache to come up in degraded state
+
+## OS update - 2021-12-02
+
+The OS update rolled out in early December included general stability improvements and updates to internal software packages.
 
 ## OS update - 2021-10-13
 
