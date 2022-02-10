@@ -48,22 +48,22 @@ The update rolled out during the last week of January, 2022, included these new 
   * Aligned the cache creation timeout with the overall timeout
   * Fixed an issue that caused a restarted cache to come up in degraded state
 
-## OS update - 2021-12-02
+## Features update - 2021-12-07
 
-The OS update rolled out in early December included general stability improvements and updates to internal software packages.
-
-## Features update - 2021-11-25
-
-An update in late November 2021 included these changes:
+An update in December 2021 included these changes:
 
 * New Azure regions - Added support for HPC Cache in Germany West Central and West US 3
 * Operations on a storage target are blocked while the target is being created
 * A change to the DNS address list no longer results in a degraded state
 * Corrected an error message for a storage target flush operation
 * Modified an alert about multiple NFS-mounted blob storage targets
-* Fixed an issue that caused a cache to show transitioning state instead of Healthy
+* Fixed an issue that caused a cache to show Transitioning state instead of Healthy
 * Various security and compliance updates
 * Documentation improvements
+
+## OS update - 2021-12-02
+
+The OS update rolled out in early December included general stability improvements and updates to internal software packages.
 
 ## OS update - 2021-10-13
 
