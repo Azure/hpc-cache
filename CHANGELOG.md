@@ -52,9 +52,22 @@ The update rolled out during the last week of January, 2022, included these new 
 
 The OS update rolled out in early December included general stability improvements and updates to internal software packages.
 
+## Features update - 2021-11-25
+
+An update in late November 2021 included these changes:
+
+* New Azure regions - Added support for HPC Cache in Germany West Central and West US 3
+* Operations on a storage target are blocked while the target is being created
+* A change to the DNS address list no longer results in a degraded state
+* Corrected an error message for a storage target flush operation
+* Modified an alert about multiple NFS-mounted blob storage targets
+* Fixed an issue that caused a cache to show transitioning state instead of Healthy
+* Various security and compliance updates
+* Documentation improvements
+
 ## OS update - 2021-10-13
 
-The OS update released on October 13 includes these improvements and bug fixes:
+The OS update released on October 13 included these improvements and bug fixes:
 
 * Fixed a timing issue that could prevent a newly created HPC Cache from serving data.
 
