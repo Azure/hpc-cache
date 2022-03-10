@@ -6,9 +6,12 @@ Cache administrators are notified of operating system updates with a banner in t
 
 Read about the OS update process in [Manage your cache - Upgrade cache software](https://docs.microsoft.com/azure/hpc-cache/hpc-cache-manage?tabs=azure-portal#upgrade-cache-software).
 
-## OS update - 2022-02-07
+## OS update - 2022-03-07
 
-OS software rolled out in the second week of February, 2022, includes internal bug fixes and software support for features that are still in development.
+OS software rolled out in the second week of March, 2022, includes internal bug fixes and software support for upcoming features. It also fixes these issues that affected some HPC Cache systems:
+
+* Fixed a network driver issue that caused a problem when used with the newest Azure hardware. The problem was seen when using a new Mellanox network interface.
+* Resolved a soft-deadlock issue that could cause client operations to stall after certain operation sequences were sent to the same parent and child directories.
 
 ## Features update - 2022-01-25
 
