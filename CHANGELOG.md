@@ -6,6 +6,15 @@ Cache administrators are notified of operating system updates with a banner in t
 
 Read about the OS update process in [Manage your cache - Upgrade cache software](https://docs.microsoft.com/azure/hpc-cache/hpc-cache-manage?tabs=azure-portal#upgrade-cache-software).
 
+## OS update - 2022-05-19
+
+This update was scheduled for April but did not roll out to all HPC Cache systems because a regression was found. If your cache receives two software upgrade notifications in quick succession, apply both.
+
+This software change adds support for future HPC Cache features, updates some internal software packages, and fixes bugs including these:
+
+* Fixed an issue that made it harder to detect back-end file changes with the cache usage model "Read heavy, infrequent writes"
+* Minor bug fixes related to the Cache Priming feature, which is in preview
+
 ## OS update - 2022-03-07
 
 OS software rolled out in the second week of March, 2022, includes internal bug fixes and software support for upcoming features. It also fixes these issues that affected some HPC Cache systems:
