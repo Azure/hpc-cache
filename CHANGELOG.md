@@ -6,6 +6,32 @@ Cache administrators are notified of operating system updates with a banner in t
 
 Read about the OS update process in [Manage your cache - Upgrade cache software](https://docs.microsoft.com/azure/hpc-cache/hpc-cache-manage?tabs=azure-portal#upgrade-cache-software).
 
+## Features update - 2022-06-06
+
+New HPC Cache features rolling out in the first week of June include the following:
+
+* Cache storage allocation
+
+  Users now can configure the percentage of cache storage that is dedicated to each storage target. Customize this setting on the portal **Storage Targets** page.
+
+  More information: [Allocate cache storage](https://docs.microsoft.com/azure/hpc-cache/manage-storage-targets#allocate-cache-storage)
+
+* Software upgrade scheduling
+
+  You can now schedule OS software updates for a specific date and time. Previously, you had the choice of upgrading manually, or waiting until the upgrade deadline and letting Azure automatically upgrade your cache. Clicking the **Upgrade** button now opens a dialog where you can schedule the automatic update.
+
+  Read [Upgrade cache software](https://docs.microsoft.com/azure/hpc-cache/hpc-cache-manage#upgrade-cache-software) for details.
+
+* Cache priming general availability
+
+  The cache priming feature preview has ended and priming is now GA. If you used the preview version's APIs, be sure to switch your command strings to reference the GA version.
+
+  Priming lets you pre-load specific files in the cache before starting a compute job. Read [Prime the cache](https://docs.microsoft.com/azure/hpc-cache/prime-cache) to learn more.
+
+* New region availability
+
+  Azure HPC Cache is now available in China North 3. [Learn where the Azure HPC Cache service is availabile](https://azure.microsoft.com/global-infrastructure/services/?products=hpc-cache)
+
 ## OS update - 2022-05-19 (14.0.0, 14.1.0)
 
 This update was scheduled for April but did not roll out to all HPC Cache systems because a regression was found. If your cache receives two software upgrade notifications in quick succession, apply both.
