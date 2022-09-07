@@ -6,9 +6,25 @@ Cache administrators are notified of operating system updates with a banner in t
 
 Read about the OS update process in [Manage your cache - Upgrade cache software](https://docs.microsoft.com/azure/hpc-cache/hpc-cache-manage?tabs=azure-portal#upgrade-cache-software).
 
+## OS update - 2022-08-31 (version 2022.08.1)
+
+The OS update delivered in August 2022 is the first in a new naming scheme. Releases will now be named after their scheduled release year and month instead of numbered sequentially.
+
+This update includes bug fixes and a small change to HPC Cache client access policy behavior: You can now delete the default NFS export rule in an existing client access policy. This change allows HPC Cache administrators to deny all access to a storage target export by removing all rules from the access policy.
+
+## Infrastructure updates - late July 2022
+
+HPC Cache software was updated in late July 2022 to improve infrastructure and interconnect with additional Azure services.
+
+## OS update - June 2022 (15.0.0, 15.1.0, 15.2.0)
+
+One update and two follow-on patches were released between June 2 and June 28.
+
+The version 15 OS update included bug fixes and updates to software packages used internally. It also improved performance for HPC Cache priming jobs on data sets made up of a large number of small files.
+
 ## Features update - 2022-06-06
 
-New HPC Cache features rolling out in the first week of June include the following:
+New HPC Cache features rolled out in the first week of June 2022 include the following:
 
 * Cache storage allocation
 
