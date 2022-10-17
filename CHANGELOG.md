@@ -6,6 +6,13 @@ Cache administrators are notified of operating system updates with a banner in t
 
 Read about the OS update process in [Manage your cache - Upgrade cache software](https://docs.microsoft.com/azure/hpc-cache/hpc-cache-manage?tabs=azure-portal#upgrade-cache-software).
 
+## Features update - 2022-10-12
+
+Azure HPC Cache software was updated in early October 2022. Changes include bug fixes, infrastructure updates to support future capabilities, and these user-visible changes:
+
+- When you create a cache, cache type is now selected separately from throughput and size choices. Type options include read-write standard and read-only caching.
+- A bug was fixed that could incorrectly modify directory services settings when an unrelated change was made.
+
 ## OS update - 2022-08-31 (version 2022.08.1)
 
 The OS update delivered in August 2022 is the first in a new naming scheme. Releases will now be named after their scheduled release year and month instead of numbered sequentially.
