@@ -10,7 +10,7 @@ Read about the OS update process in [Manage your cache - Upgrade cache software]
 
 Azure HPC Cache software was updated in early October 2022. Changes include bug fixes, infrastructure updates to support future capabilities, and these user-visible changes:
 
-- When you create a cache, cache type is now selected separately from throughput and size choices. Type options include read-write standard and read-only caching.
+- Cache type is now specified separately from throughput and size choices when creating a cache in the Azure Portal. Type options include read-write standard caching and read-only caching.
 - A bug was fixed that could incorrectly modify directory services settings when an unrelated change was made.
 
 ## OS update - 2022-08-31 (version 2022.08.1)
