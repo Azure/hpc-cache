@@ -6,6 +6,13 @@ Cache administrators are notified of operating system updates with a banner in t
 
 Read about the OS update process in [Manage your cache - Upgrade cache software](https://docs.microsoft.com/azure/hpc-cache/hpc-cache-manage?tabs=azure-portal#upgrade-cache-software).
 
+## OS update - 2022-12-02 (version 2022.12.0)
+
+The OS update released in December 2022 included internal tooling to enable new features, and overall improvements to system stability and error recovery. Some specific bug fixes include these:
+
+- Fixed an issue with extended groups settings that caused problems when creating, removing, or updating storage target namespace paths
+- Sped up the process for purging old files when cache space is low
+
 ## Features update - 2022-10-12
 
 Azure HPC Cache software was updated in early October 2022. Changes include bug fixes, infrastructure updates to support future capabilities, and these user-visible changes:
