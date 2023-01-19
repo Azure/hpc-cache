@@ -6,6 +6,13 @@ Cache administrators are notified of operating system updates with a banner in t
 
 Read about the OS update process in [Manage your cache - Upgrade cache software](https://docs.microsoft.com/azure/hpc-cache/hpc-cache-manage?tabs=azure-portal#upgrade-cache-software).
 
+## OS update - 2023-01-19 (version 2022.12.1)
+The OS patch released in January 2023 includes stability fixes for various issues discovered in the field. Some specific bug fixes include these:
+- Fixed a bug in the recycling inode in cache to improve recycling performance and cache hit rate.
+- A cache response to a client read call could return more data that was requested, resulting in some variants of earlier Linux kernel NFS clients hanging or raising errors.
+- Updated the NVME driver timeout logic to prevent drives from appearing offline.
+- Resolved the negative impacts when real time telemetry uploads encounter problems.
+
 ## OS update - 2022-12-02 (version 2022.12.0)
 
 The OS update released in December 2022 included internal tooling to enable new features, and overall improvements to system stability and error recovery. Some specific bug fixes include these:
