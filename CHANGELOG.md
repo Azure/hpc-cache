@@ -20,11 +20,11 @@ The OS patch released in March 2023 includes stability fixes for various issues 
 -	Fixed an issue that could cause corefiles to remain uncompressed.
 -	Dynamic dns registrations have been disabled for vFXT and HPC Cache as they are not used to form or scale clusters in these environments.
 -	Fixed corefile tracking issue that was resulting in the status incorrectly showing as "dumping" long after it had completed.
--	Updated the NVME driver timeout logic to prevent drives from appearing offline.
+-	Updated the NVMe driver timeout logic to prevent drives from appearing offline.
 -	Added NAS core filer checks to validate health as an option on modify. This feature is disabled by default.  
 -	Disabled internal collection of device statistics that were disruptive to system performance.
 -	Fixed error in support tab for FXT and vFXT that resulted in backtrace.
--	Corrected issues in handling of absent console
+-	Corrected issues in handling of absent console.
 
 
 ## OS update - 2023-01-19 (version 2022.12.1)
