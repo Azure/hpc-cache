@@ -6,6 +6,27 @@ Cache administrators are notified of operating system updates with a banner in t
 
 Read about the OS update process in [Manage your cache - Upgrade cache software](https://docs.microsoft.com/azure/hpc-cache/hpc-cache-manage?tabs=azure-portal#upgrade-cache-software).
 
+## OS update - 2023-03-09 (version 2023.02.1)
+The OS patch released in March 2023 includes stability fixes for various issues discovered in the field and writeback caching enhancements. Some specific bug fixes and enhancements include these:
+- Resolved negative impacts when real time telemetry uploads encounter problems.
+-	Fixed a bug in the recycling inode area in the cache to improve recycling performance and cache hit rate.
+-	Resolved an issue where a cache response to a client read call could return more data that was requested, resulting in some variants of earlier Linux kernel NFS clients hanging or raising errors.
+-	Corrected the timestamp handling in rename operation when an internal process restarts.
+-	Write caching enhancement to respond more quickly to out of space conditions on storage target(s).
+-	Disable aggressive real time diagnostic data uploads.
+-	Enhance priming infrastructure to support refreshing and re-priming files and directories modified around the cache.
+-	Fixed some internal processing of XML-based messages to properly escape user input.
+-	Fixed some startup race conditions that could cause transient failures to create or scale an HPC Cache.
+-	Fixed an issue that could cause corefiles to remain uncompressed.
+-	Dynamic dns registrations have been disabled for vFXT and HPC Cache as they are not used to form or scale clusters in these environments.
+-	Fixed corefile tracking issue that was resulting in the status incorrectly showing as "dumping" long after it had completed.
+-	Updated the NVME driver timeout logic to prevent drives from appearing offline.
+-	Added NAS core filer checks to validate health as an option on modify. This feature is disabled by default.  
+-	Disabled internal collection of device statistics that were disruptive to system performance.
+-	Fixed error in support tab for FXT and vFXT that resulted in backtrace.
+-	Corrected issues in handling of absent console
+
+
 ## OS update - 2023-01-19 (version 2022.12.1)
 The OS patch released in January 2023 includes stability fixes for various issues discovered in the field. Some specific bug fixes include these:
 - Fixed a bug in the recycling inode in cache to improve recycling performance and cache hit rate.
