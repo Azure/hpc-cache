@@ -6,6 +6,17 @@ Cache administrators are notified of operating system updates with a banner in t
 
 Read about the OS update process in [Manage your cache - Upgrade cache software](https://docs.microsoft.com/azure/hpc-cache/hpc-cache-manage?tabs=azure-portal#upgrade-cache-software).
 
+## OS update - 2023-04-28 (version 2023.04)
+- Fixed race between nodes while initializing cloud corefiler
+- Enforced the file count hard limit to 110% of configured max file count
+- Added ability to adjust ratios for cfs/mbuf memory allocation from 95/5 default. Changes require restart.
+- Added NAS core filer check to verify that new network addresses are assigned to the same core filer as existing network addresses
+- Fixed issue to allow updates to existing vserver access policy rules through the Azure Portal
+- Fixed issue to improve the distribution of NFS ops across TCP connections to NAS core filers
+- Deny client write operations when storage target returns "no space"
+- Added notification to handle all flush non-recoverable (NOSPC or DQUOT) errors, causing long stuck flush requests 
+- Fixed error in Support tab for FXT and vFXT GUI
+
 ## StorageCache RP update - 2023-03-21
 * Public Preview for Premium HPC Cache SKU
 
