@@ -6,6 +6,10 @@ Cache administrators are notified of operating system updates with a banner in t
 
 Read about the OS update process in [Manage your cache - Upgrade cache software](https://docs.microsoft.com/azure/hpc-cache/hpc-cache-manage?tabs=azure-portal#upgrade-cache-software).
 
+## OS update - 2023-06-02 (version 2023.04.2)
+- Fixed an issue that prevented metrics from displaying in the portal
+- Updated default "Read" usage model to include checking for write-around changes
+
 ## OS update - 2023-04-28 (version 2023.04)
 - Fixed race between nodes while initializing cloud corefiler
 - Enforced the file count hard limit to 110% of configured max file count
