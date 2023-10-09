@@ -6,6 +6,15 @@ Cache administrators are notified of operating system updates with a banner in t
 
 Read about the OS update process in [Manage your cache - Upgrade cache software](https://docs.microsoft.com/azure/hpc-cache/hpc-cache-manage?tabs=azure-portal#upgrade-cache-software).
 
+## OS update - 2023-10-09 (version 2023.09)
+- Fixed an issue where an upgrade would remove visibility of metrics
+- Corrected the handling of an HA event that could cause a resource leak or service restarts
+- Added OS-level security updates including CVE patches and OpenSSL vulnerabilities
+- Fixed an issue to prevent mbuf starvation and kernel panics
+- Fixed an issue where usage model or cache policy updates would cause a fault
+- Fixed a vaildation setting when creating a usage model or cache policy
+- Fixed a namespace issue when internal communication fails
+
 ## OS update - 2023-06-02 (version 2023.04.2)
 - Fixed an issue that prevented metrics from displaying in the portal
 - Updated default "Read" usage model to include checking for write-around changes
