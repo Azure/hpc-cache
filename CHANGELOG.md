@@ -6,6 +6,19 @@ Cache administrators are notified of operating system updates with a banner in t
 
 Read about the OS update process in [Manage your cache - Upgrade cache software](https://docs.microsoft.com/azure/hpc-cache/hpc-cache-manage?tabs=azure-portal#upgrade-cache-software).
 
+## OS update - 2024-05 (version 2024.04)
+- Upgraded FreeBSD OS from 13.1 to 13.2
+- AOS upgrades from versions prior to 2023.04 must upgrade to 2023.04.1 before upgrading to 2023.09.1 or later
+- Updated waagent lib directory location to improve disk space usage
+- Fixed an issue where a customer-initiated database dump could cause a crash
+- Fixed an issue where system instability could cause an out-of-memory issue
+- Fixed an issue where stats for Write operations were not correct when under load
+- Fixed an issue where a deadlock condition could cause a file system service restart
+- Fixed an issue where a race condition in the file handle cache module could cause a service restart
+
+## OS update - 2023-11 (version 2023.09.1)
+- Fixed a FreeBSD wired memory leak that would cause swap usage to grow until reboot
+
 ## OS update - 2023-10-09 (version 2023.09)
 - Fixed an issue where an upgrade would remove visibility of metrics
 - Corrected the handling of an HA event that could cause a resource leak or service restarts
