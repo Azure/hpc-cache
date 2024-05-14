@@ -16,7 +16,7 @@ Read about the OS update process in [Manage your cache - Upgrade cache software]
 - Fixed an issue where a deadlock condition could cause a file system service restart
 - Fixed an issue where a race condition in the file handle cache module could cause a service restart
 
-## OS update - 2023-11 (version 2023.09.1)
+## OS update - 2023-12 (version 2023.09.1)
 - Fixed a FreeBSD wired memory leak that would cause swap usage to grow until reboot
 
 ## OS update - 2023-10-09 (version 2023.09)
