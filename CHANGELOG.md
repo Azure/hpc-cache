@@ -6,6 +6,11 @@ Cache administrators are notified of operating system updates with a banner in t
 
 Read about the OS update process in [Manage your cache - Upgrade cache software](https://docs.microsoft.com/azure/hpc-cache/hpc-cache-manage?tabs=azure-portal#upgrade-cache-software).
 
+## OS update - 2024-06 (version 2024.04.1)
+- Enabled file and directory data refresh script while in writeback mode.
+- Updated the Azure FreeBSD provisioning agent to the latest version.
+- Fixed an issue where a node reformat could cause a restart to stall.
+
 ## OS update - 2024-05 (version 2024.04)
 - Upgraded FreeBSD OS from 13.1 to 13.2
 - AOS upgrades from versions prior to 2023.04 must upgrade to 2023.04.1 before upgrading to 2023.09.1 or later
