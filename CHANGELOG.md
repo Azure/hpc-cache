@@ -6,6 +6,18 @@ Cache administrators are notified of operating system updates with a banner in t
 
 Read about the OS update process in [Manage your cache - Upgrade cache software](https://docs.microsoft.com/azure/hpc-cache/hpc-cache-manage?tabs=azure-portal#upgrade-cache-software).
 
+- Upgraded OS from FreeBSD 13.2 to FreeBSD 13.3 which includes several security patches and [additional improvements](https://www.freebsd.org/releases/13.3R/relnotes/).
+- Increased the root partition size to provide additional space.
+- Added a new XML-RPC call to create core information files when needed for analysis.
+- Fixed an issue where a data upload could cause an error.
+- Fixed error messages in the logs caused by parsing of XML-RPC information from node joins.
+- Fixed an issue where high availability service could crash due to a lock-related bug during a snapshot check.
+- Added buffer stats to the data collection bundle.
+- Improved performance in concurrent directory operations.
+- Improved locking performance in concurrent directory operations.
+- Improved performance in high-availability write operations.
+- Fixed an out-of-memory issue when cleaning core files.
+
 ## OS update - 2024-10 (version 2024.04.2 and 2023.09.2)
 - Patched a FreeBSD security vulnerability.
 
