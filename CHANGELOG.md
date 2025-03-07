@@ -6,6 +6,7 @@ Cache administrators are notified of operating system updates with a banner in t
 
 Read about the OS update process in [Manage your cache - Upgrade cache software](https://docs.microsoft.com/azure/hpc-cache/hpc-cache-manage?tabs=azure-portal#upgrade-cache-software).
 
+## OS update - 2025-03 (version 2024.11)
 - Upgraded OS from FreeBSD 13.2 to FreeBSD 13.3 which includes several security patches and [additional improvements](https://www.freebsd.org/releases/13.3R/relnotes/).
 - Increased the root partition size to provide additional space.
 - Added a new XML-RPC call to create core information files when needed for analysis.
