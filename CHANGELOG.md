@@ -6,6 +6,18 @@ Cache administrators are notified of operating system updates with a banner in t
 
 Read about the OS update process in [Manage your cache - Upgrade cache software](https://docs.microsoft.com/azure/hpc-cache/hpc-cache-manage?tabs=azure-portal#upgrade-cache-software).
 
+## OS update - 2025-06 (version 2025.05)
+- Upgraded OS from FreeBSD 13.3 to FreeBSD 13.5 which includes several security patches. More info on [13.4](https://www.freebsd.org/releases/13.4R/relnotes/) and [13.5](https://www.freebsd.org/releases/13.5R/relnotes/).
+- Added ability to preserve last 30 days of GSI data on FXT clusters.
+- Fixed a rare out-of-memory issue when using the command utility tool.
+- Fixed a low-memory condition in emergency memory pool processing.
+- Improved space accounting in cloud file system's snapshots.
+- Improved the IP management tracing in Azure network operations.
+- Fixed file operations error handling to avoid a file operations leak.
+- Fixed the file distribution module for distributing cluster configuration data among nodes.
+- Fixed a locking issue that caused the file system transaction log to hang.
+- Fixed an issue where client-facing IP addresses were unavailable until node restart.- 
+
 ## OS update - 2025-03 (version 2024.11)
 - Upgraded OS from FreeBSD 13.2 to FreeBSD 13.3 which includes several security patches and [additional improvements](https://www.freebsd.org/releases/13.3R/relnotes/).
 - Increased the root partition size to provide additional space.
