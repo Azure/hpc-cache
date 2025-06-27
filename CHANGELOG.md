@@ -16,7 +16,7 @@ Read about the OS update process in [Manage your cache - Upgrade cache software]
 - Fixed file operations error handling to avoid a file operations leak.
 - Fixed the file distribution module for distributing cluster configuration data among nodes.
 - Fixed a locking issue that caused the file system transaction log to hang.
-- Fixed an issue where client-facing IP addresses were unavailable until node restart.- 
+- Fixed an issue where client-facing IP addresses were unavailable until node restart.
 
 ## OS update - 2025-03 (version 2024.11)
 - Upgraded OS from FreeBSD 13.2 to FreeBSD 13.3 which includes several security patches and [additional improvements](https://www.freebsd.org/releases/13.3R/relnotes/).
